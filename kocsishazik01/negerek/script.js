@@ -1,4 +1,4 @@
-function findH(){
+function RickRoll(){
   var A = document.getElementById("a").value;
   var B = document.getElementById("b").value;
  
@@ -14,7 +14,7 @@ function findH(){
   document.getElementById("aAndB").innerHTML = (A * A) + (B * B);
   
   //átfogó
-   document.getElementById("sqrtC").innerHTML = Math.round((Math.sqrt((A * A) + (B * B)) * 100)) / 100;
+   document.getElementById("sqrtC").innerHTML = Math.round((Math.sqrt((A * eA) + (B * B)) * 100)) / 100;
   
  }
 }
