@@ -10,7 +10,7 @@ function findH(){
   document.getElementById("aSqu").innerHTML = sideA * sideA;
   document.getElementById("bSqu").innerHTML = sideB * sideB;
   
-  //elso szam
+  //a es b 
   document.getElementById("aAndB").innerHTML = (sideA * sideA) + (sideB * sideB);
   
   //átfogó
