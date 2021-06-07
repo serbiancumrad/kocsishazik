@@ -1,0 +1,62 @@
+#include<stdio.h>
+
+int fiukszama(int a[], int magassag);
+int nokszama(int a[], int magassag);
+
+int main()
+{
+ int magassag, i, a[10];
+ int fiuk = 0, nok = 0;
+
+ printf("\n adja meg a tomb nagysagat  :  ");
+ scanf("%d", &magassag);
+
+ printf("\n adja meg a tomb elemeit :  ");
+ for(i = 0; i < magassag; i++)
+ {
+      scanf("%d", &a[i]);
+ }
+
+ fiuk = fiukszama(a, magassag);
+ nok = nokszama(a, magassag);
+
+ printf("\n osz fiuk szama = %d ", fiuk);
+ printf("\n osz nok szama = %d ", nok);
+
+
+
+ return 0;
+}
+
+int fiukszama(int a[], int magassag)
+{
+  int i, fiuk = 0;
+  printf("\n fiuk szama: ");
+
+  for(i = 0; i < magassag; i ++)
+  {
+     if(a[i] >= 0)
+     {
+ 	printf("%d  \n", a[i]);
+ 	fiuk++;
+     }
+   }
+
+   return fiuk;
+}
+
+int nokszama(int a[], int magassag)
+{
+  int i, nok = 0;
+  printf("\n nok szama: ");
+
+  for(i = 0; i < magassag; i ++)
+  {
+     if(a[i] < 0)
+     {
+ 	printf("%d \n ", a[i]);
+ 	nok++;
+     }
+   }
+   return nok;
+}
